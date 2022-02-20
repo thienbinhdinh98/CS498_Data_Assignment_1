@@ -39,10 +39,15 @@ app.post('/register',(req,res)=>{
 
 //list get req
 app.get('/list', (req,res)=>{
-	let query = `SELECT * FROM Users;`;
-	connection.query(query,(e,r,f)=>{
-		res.json({'users': r });
-	})
+    let query = `SELECT * FROM Users;`;
+    connection.query(query,(e,r,f)=>{
+            let arr = []
+            for(var  i = 0; i < r.length; i++){
+                    arr.push(r[i].username);
+            }
+            console.log(arr);
+            res.json({'users': arr });
+    })
 })
 
 //clear post req
