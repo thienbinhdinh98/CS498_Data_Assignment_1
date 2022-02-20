@@ -47,9 +47,10 @@ app.get('/list', (req,res)=>{
 
 //clear post req
 app.post('/clear', (req,res)=>{
-
-
-
+    let query = `DELETE FROM Users;`;
+    connection.query(query, (e,r,f)=>{
+            res.end("deleted");
+    });
 })
 
 //http res for listening
