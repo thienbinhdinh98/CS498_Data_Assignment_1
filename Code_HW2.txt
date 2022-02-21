@@ -1,1 +1,2 @@
-homework2_code
+My server code (index.js and index_rep.js) can be found in the folder 
+named “homework2_code”.
