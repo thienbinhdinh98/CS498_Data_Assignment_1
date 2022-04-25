@@ -1,1 +1,5 @@
 My code is in the folder labeled "hw4_code"
+
+The python code are in cluster VM
+
+index.js is the website, it is in main VM.
